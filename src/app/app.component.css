@@ -13,24 +13,33 @@ body{
 }
 
 .form{
-  background: #d3d3d3;
+  background-color: rgb(240, 230, 230);
   width: 60%;
   height: 70%;
   margin: 0 auto;
-  text-align: center;
   border: 2px solid #069;
   border-radius: 10px;
   margin-top: 50px;
+  text-align: center;
 }
 
-h1{
+h1 {
+  text-align: center;
   background: #069;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
 }
 
 input,select{
   border-radius: 10px;
   height: 40 px;
   border: none;
+  font-size: 20px
 }
 
 input[type="submit"]{
