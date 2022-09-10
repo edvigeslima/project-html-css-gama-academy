@@ -1,84 +1,117 @@
-<body>
-    <div class="form">
-        <form method="post" action="index.html">
-            <h1>Sistema de Livros</h1><br>
-            <h2>Cadastro</h2><br>
-            <h3>
-                <label for="titulo">Título:</label>&nbsp;
-                <input type="text" placeholder="Título do livro">&nbsp;&nbsp;
-                <label for="titulo">Descrição:</label>&nbsp;
-                <input type="text" placeholder="Descrição"><br><br>
-                <label for="titulo">Autor(a):</label>&nbsp;
-                <input type="text" placeholder="Autor(a)">&nbsp;&nbsp;
-                <label for="titulo">Editora:</label>&nbsp;
-                <input type="text" size="20" placeholder="Editora"><br><br>
-                <label name="generoliterario">Gênero:</label>
-                <select name="genero" id="generoliterario" >
-                    <option value="0" size="auto">Escolha o gênero literário</option>
-                    <optgroup label="Ficção">
-                        <option value="1">Ação e aventura</option>
-                        <option value="2">Antologias</option>
-                        <option value="3">Chegando à maioridade</option>
-                        <option value="4">Clássicos</option>
-                        <option value="5">Contos</option>
-                        <option value="6">Cultural e étnico</option>
-                        <option value="7">Fantasia</option>
-                        <option value="8">Ficção afro-americana</option>
-                        <option value="9">Ficção científica</option>
-                        <option value="10">Ficção Contemporânea</option>
-                        <option value="11">Ficção Cristã</option>
-                        <option value="12">Ficção Feminina</option>
-                        <option value="13">Ficção histórica</option>
-                        <option value="14">Ficção LGBTQ</option>
-                        <option value="15">Ficção Literária</option>
-                        <option value="16">Humor e comédia</option>
-                        <option value="17">Infantil</option>
-                        <option value="18">Jovem adulto</option>
-                        <option value="19">Mashups</option>
-                        <option value="20">Mistério e crime</option>
-                        <option value="21">Peças e roteiros</option>
-                        <option value="22">Poesia</option>
-                        <option value="23">Quadrinhos e romances gráficos</option>
-                        <option value="24">Romance</option>
-                        <option value="25">Temáticas e motivações</option>
-                        <option value="26">Thriller e Suspense</option>
-                    </optgroup>
-                    <optgroup label="Não-ficção">
-                        <option value="27">Agricultura</option>
-                        <option value="28">Autoajuda e autoaprimoramento</option>
-                        <option value="29">Biografias e memórias</option>
-                        <option value="30">Casa e jardim</option>
-                        <option value="31">Casamentos</option>
-                        <option value="32">Computadores e Internet</option>
-                        <option value="33">Crime Verdadeiro</option>
-                        <option value="34">Culinária, comida, vinho e bebidas espirituosas</option>
-                        <option value="35">Educação e Referência</option>
-                        <option value="36">Entretenimento</option>
-                        <option value="37">Escrita e Publicação</option>
-                        <option value="38">Esportes e atividades ao ar livre</option>
-                        <option value="39">Faça você mesmo e artesanato</option>
-                        <option value="40">Fotografia</option>
-                        <option value="41">Gestão de negócios</option>
-                        <option value="42">Guias de carreira</option>
-                        <option value="43">Humanidades e Ciências Sociais</option>
-                        <option value="44">Inspirador</option>
-                        <option value="45">LGBTQ Não-ficção</option>
-                        <option value="46">Matemática e Ciências</option>
-                        <option value="47">Não-ficção infantil</option>
-                        <option value="48">Natureza</option>
-                        <option value="49">Nova era</option>
-                        <option value="50">Paternidade e famílias</option>
-                        <option value="51">Projeto</option>
-                        <option value="52">Quadrinhos não-ficção</option>
-                        <option value="53">Religião e Espiritualidade</option>
-                        <option value="54">Saúde e Bem-Estar</option>
-                        <option value="55">Sexo e Relacionamentos</option>
-                        <option value="56">Tecnologia</option>
-                        <option value="57">Viajar por</option>
-                    </optgroup>
-                </select><br><br>
-                <input type="submit" value="Salvar"><br><br>
-            </h3>
-        </form>
-    </div>
-</body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="text-center">
+				Sistema de Livros
+			</h3>
+			<h3 class="text-center">
+				Cadastro
+			</h3>
+			<form role="form">
+				<div class="form-group">
+					 
+					<label for="titulo">
+						Título:
+					</label>
+					<input type="text" class="form-control" id="titulo" />
+				</div>
+				<div class="form-group">
+					 
+					<label for="descricao">
+						Descrição:
+					</label>
+					<input type="text" class="form-control" id="descricao" />
+				</div>
+                <div class="form-group">
+					 
+					<label for="author">
+						Autor(a):
+					</label>
+					<input type="text" class="form-control" id="author" />
+				</div>
+                <div class="form-group">
+					 
+					<label for="editora">
+						Editora:
+					</label>
+					<input type="text" class="form-control" id="editora" />
+				</div>
+                <div class="form-group">
+					 
+					<label for="generoliterario">
+						Gênero:
+					</label>
+					<select name="genero" class="form-control" id="generoliterario" >
+                        <option value="0" size="auto">Escolha o gênero literário</option>
+                        <optgroup label="Ficção">
+                            <option value="1">Ação e aventura</option>
+                            <option value="2">Antologias</option>
+                            <option value="3">Chegando à maioridade</option>
+                            <option value="4">Clássicos</option>
+                            <option value="5">Contos</option>
+                            <option value="6">Cultural e étnico</option>
+                            <option value="7">Fantasia</option>
+                            <option value="8">Ficção afro-americana</option>
+                            <option value="9">Ficção científica</option>
+                            <option value="10">Ficção Contemporânea</option>
+                            <option value="11">Ficção Cristã</option>
+                            <option value="12">Ficção Feminina</option>
+                            <option value="13">Ficção histórica</option>
+                            <option value="14">Ficção LGBTQ</option>
+                            <option value="15">Ficção Literária</option>
+                            <option value="16">Humor e comédia</option>
+                            <option value="17">Infantil</option>
+                            <option value="18">Jovem adulto</option>
+                            <option value="19">Mashups</option>
+                            <option value="20">Mistério e crime</option>
+                            <option value="21">Peças e roteiros</option>
+                            <option value="22">Poesia</option>
+                            <option value="23">Quadrinhos e romances gráficos</option>
+                            <option value="24">Romance</option>
+                            <option value="25">Temáticas e motivações</option>
+                            <option value="26">Thriller e Suspense</option>
+                        </optgroup>
+                        <optgroup label="Não-ficção">
+                            <option value="27">Agricultura</option>
+                            <option value="28">Autoajuda e autoaprimoramento</option>
+                            <option value="29">Biografias e memórias</option>
+                            <option value="30">Casa e jardim</option>
+                            <option value="31">Casamentos</option>
+                            <option value="32">Computadores e Internet</option>
+                            <option value="33">Crime Verdadeiro</option>
+                            <option value="34">Culinária, comida, vinho e bebidas espirituosas</option>
+                            <option value="35">Educação e Referência</option>
+                            <option value="36">Entretenimento</option>
+                            <option value="37">Escrita e Publicação</option>
+                            <option value="38">Esportes e atividades ao ar livre</option>
+                            <option value="39">Faça você mesmo e artesanato</option>
+                            <option value="40">Fotografia</option>
+                            <option value="41">Gestão de negócios</option>
+                            <option value="42">Guias de carreira</option>
+                            <option value="43">Humanidades e Ciências Sociais</option>
+                            <option value="44">Inspirador</option>
+                            <option value="45">LGBTQ Não-ficção</option>
+                            <option value="46">Matemática e Ciências</option>
+                            <option value="47">Não-ficção infantil</option>
+                            <option value="48">Natureza</option>
+                            <option value="49">Nova era</option>
+                            <option value="50">Paternidade e famílias</option>
+                            <option value="51">Projeto</option>
+                            <option value="52">Quadrinhos não-ficção</option>
+                            <option value="53">Religião e Espiritualidade</option>
+                            <option value="54">Saúde e Bem-Estar</option>
+                            <option value="55">Sexo e Relacionamentos</option>
+                            <option value="56">Tecnologia</option>
+                            <option value="57">Viajar por</option>
+                        </optgroup>
+                    </select>
+				</div>
+				
+				
+				<button type="submit" class="btn btn-primary">
+					Salvar
+				</button>
+			</form>
+		</div>
+	</div>
+</div>
